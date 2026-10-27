@@ -1,0 +1,25 @@
+import HistoryClient from "./history-client";
+
+export const metadata = {
+  title: "Janome History | Iran Janome",
+  description: " Janome History ",
+  keywords: "Janome, Janome sewing mahince, janome history",
+  alternates: {
+    canonical: "https://iranjanome.ir/en/history/",
+    languages: {
+      fa: "https://iranjanome.ir/history/",
+    },
+  },
+  openGraph: {
+    title: "Janome History | Iran Janome",
+    description: "Janome History",
+    url: "https://iranjanome.ir/en/history/",
+    images: [
+      { url: "https://iranjanome.ir/images/background/MC500E_og_image.jpg", width: 1200, height: 630 },
+    ],
+  },
+};
+
+export default function HistoryPageEn() {
+  return <HistoryClient />;
+}
