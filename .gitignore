@@ -2,5 +2,6 @@
 .next/
 out/
 janome-app-router.zip
-public/images/machies/Janome/
+public/images/machines/Janome/
 node_modules/
+.vscode/settings.json

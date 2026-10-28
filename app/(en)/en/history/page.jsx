@@ -8,6 +8,8 @@ export const metadata = {
     canonical: "https://iranjanome.ir/en/history/",
     languages: {
       fa: "https://iranjanome.ir/history/",
+      en: "https://iranjanome.ir/en/history/",
+      "x-default": "https://iranjanome.ir/history/",
     },
   },
   openGraph: {

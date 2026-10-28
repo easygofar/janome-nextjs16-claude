@@ -65,14 +65,14 @@ const Faqs = () => {
 				className="h3-shadow green w-100 p-0 m-0 d-flex align-items-center"
 			>
 				<RiQuestionnaireLine size="2.0rem" className="mx-2" />
-				<h1 className=" w-100 m-0 p-2">سئوالات متداول فنی</h1>
+				<h1 className=" w-100 m-0 p-2">سؤالات متداول فنی</h1>
 			</div>
 			<div className="section-background d-flex flex-column align-items-center py-5 m-0">
 				<FireFly />
 				<div className="pb-3"></div>
 			</div> */}
 
-			<TopEng pagetitle="سئوالات متداول فنی">
+			<TopEng pagetitle="سؤالات متداول فنی">
 				<RiQuestionnaireLine size="2.0rem" className="mx-2" />
 			</TopEng>
 			<section className="main-backcolor min-vh-100 w-100 border p-5">
@@ -91,7 +91,7 @@ const Faqs = () => {
 					))}
 				</div>
 				<section className="row w-75 p-2 pt-4" id="faq-form">
-					<h4>فرم ارسال سئوالات فنی</h4>
+					<h4>فرم ارسال سؤالات فنی</h4>
 
 					{!emailSent ? (
 						<EmailForm

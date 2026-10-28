@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
   if (!machine) return {};
 
   const title = `چرخ خیاطی ${machine.farsi} مدل ${machine.model} | ژانومه ایران`;
-  const description = ` چرخ خیاطی ژانومه مدل ${machine.model}`;
+  const description = `مشخصات و ویژگی‌های چرخ خیاطی ${machine.farsi} مدل ${machine.model}؛ ${machine.machine_type}، سیستم ${machine.system}. نمایندگی رسمی ژانومه ایران.`;
 
   return {
     title,
@@ -28,12 +28,17 @@ export async function generateMetadata({ params }) {
     keywords: `چرخ خیاطی ژانومه , ژانومه , مدل ${machine.model} , ${machine.machine_type}, ${machine.brand}, ${machine.system}`,
     alternates: {
       canonical: `https://iranjanome.ir/janome-sewing-machine-model/${machine.model}/`,
+      languages: {
+        fa: `https://iranjanome.ir/janome-sewing-machine-model/${machine.model}/`,
+        en: `https://iranjanome.ir/en/janome-sewing-machine-model/${machine.model}/`,
+        "x-default": `https://iranjanome.ir/janome-sewing-machine-model/${machine.model}/`,
+      },
     },
     openGraph: {
       title,
       description,
       url: `https://iranjanome.ir/janome-sewing-machine-model/${machine.model}/`,
-      images: [{ url: `https://iranjanome.ir/${getOGImage(machine)}`, width: 1200, height: 630 }],
+      images: [{ url: `https://iranjanome.ir${getOGImage(machine)}`, width: 1200, height: 630 }],
     },
   };
 }
@@ -47,7 +52,7 @@ export default async function ModelDetailPage({ params }) {
     "@context": "https://schema.org/",
     "@type": "Product",
     name: `چرخ خیاطی ${machine.farsi} ${machine.model}`,
-    image: `https://iranjanome.ir/images/machines/${machine.image[0]}`,
+    image: `https://iranjanome.ir${getOGImage(machine)}`,
     description: ` چرخ خیاطی ${machine.farsi} مدل ${machine.model} ، ${machine.known_as} ، ${machine.system} ، ${machine.made}`,
     brand: {
       "@type": "Brand",
@@ -78,16 +83,15 @@ export default async function ModelDetailPage({ params }) {
         "تیغ پاک دوزی": machine["blade_cleaner"],
       },
     ],
-    offers: {
+  };
+  if (machine.available) {
+    jsonLd.offers = {
       "@type": "Offer",
       priceCurrency: "IRR",
-      price: "0",
-      seller: {
-        "@type": "Organization",
-        name: "ژانومه",
-      },
-    },
-  };
+      availability: "https://schema.org/InStock",
+      seller: { "@type": "Organization", name: "ژانومه" },
+    };
+  }
 
   return (
     <div className="container">

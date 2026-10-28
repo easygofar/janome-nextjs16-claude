@@ -11,7 +11,9 @@ export const metadata = {
     // Fixed here for consistency.
     canonical: "https://iranjanome.ir/services/training/",
     languages: {
+      fa: "https://iranjanome.ir/services/training/",
       en: "https://iranjanome.ir/en/services/training/",
+      "x-default": "https://iranjanome.ir/services/training/",
     },
   },
   openGraph: {

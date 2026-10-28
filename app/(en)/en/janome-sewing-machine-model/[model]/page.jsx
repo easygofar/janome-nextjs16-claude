@@ -17,7 +17,7 @@ export async function generateMetadata({ params }) {
   if (!machine) return {};
 
   const title = `Detail Information of Janome ${machine.model} | Iran Janome`;
-  const description = `Detail Information Page for ${machine.model}`;
+  const description = `Specifications and features of the Janome ${machine.model} sewing machine: ${machine.machine_type}, ${machine.system}. Official Iran Janome representative.`;
 
   return {
     title,
@@ -25,12 +25,17 @@ export async function generateMetadata({ params }) {
     keywords: `Janome, ${machine.model} , ${machine.machine_type}, ${machine.brand}, ${machine.system} ,${machine.brand_model}`,
     alternates: {
       canonical: `https://iranjanome.ir/en/janome-sewing-machine-model/${machine.model}/`,
+      languages: {
+        fa: `https://iranjanome.ir/janome-sewing-machine-model/${machine.model}/`,
+        en: `https://iranjanome.ir/en/janome-sewing-machine-model/${machine.model}/`,
+        "x-default": `https://iranjanome.ir/janome-sewing-machine-model/${machine.model}/`,
+      },
     },
     openGraph: {
       title,
       description,
       url: `https://iranjanome.ir/en/janome-sewing-machine-model/${machine.model}/`,
-      images: [{ url: `https://iranjanome.ir/${getOGImage(machine)}`, width: 1200, height: 630 }],
+      images: [{ url: `https://iranjanome.ir${getOGImage(machine)}`, width: 1200, height: 630 }],
     },
   };
 }

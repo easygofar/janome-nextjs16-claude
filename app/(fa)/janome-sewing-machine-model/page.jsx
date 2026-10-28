@@ -11,7 +11,8 @@ export const metadata = {
   alternates: {
     canonical: "https://iranjanome.ir/janome-sewing-machine-model/",
     languages: {
-      en: "https://iranjanome.ir/en/janome-sewing-machine-model/",
+      fa: "https://iranjanome.ir/janome-sewing-machine-model/",
+      "x-default": "https://iranjanome.ir/janome-sewing-machine-model/",
     },
   },
   openGraph: {

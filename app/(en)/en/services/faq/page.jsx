@@ -8,6 +8,8 @@ export const metadata = {
     canonical: "https://iranjanome.ir/en/services/faq/",
     languages: {
       fa: "https://iranjanome.ir/services/faq/",
+      en: "https://iranjanome.ir/en/services/faq/",
+      "x-default": "https://iranjanome.ir/services/faq/",
     },
   },
   openGraph: {

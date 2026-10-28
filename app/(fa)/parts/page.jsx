@@ -10,7 +10,9 @@ export const metadata = {
   alternates: {
     canonical: "https://iranjanome.ir/parts/",
     languages: {
+      fa: "https://iranjanome.ir/parts/",
       en: "https://iranjanome.ir/en/parts/",
+      "x-default": "https://iranjanome.ir/parts/",
     },
   },
   openGraph: {

@@ -67,7 +67,7 @@ function EmailFormEng({ handleChange, emailMessage, error, handleSubmit }) {
 					htmlFor="exampleFormControlTextarea1"
 					className="form-label"
 				>
-					متن سئوال فنی
+					متن سؤال فنی
 				</label>
 				<textarea
 					className="form-control"

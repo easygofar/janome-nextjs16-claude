@@ -7,7 +7,8 @@ export const metadata = {
   alternates: {
     canonical: "https://iranjanome.ir/agents/",
     languages: {
-      en: "https://iranjanome.ir/en/agents/",
+      fa: "https://iranjanome.ir/agents/",
+      "x-default": "https://iranjanome.ir/agents/",
     },
   },
   openGraph: {

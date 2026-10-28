@@ -342,7 +342,7 @@ ul.eng-content a {
 	transform: translateX(-50%);
 	text-shadow: 0px 3px 4px rgba(0, 0, 0, 0.21);
 	margin: auto 0;
-	white-space: nowrap;
+	/* white-space: nowrap; */
 }
 
 #farsi-title>h1,

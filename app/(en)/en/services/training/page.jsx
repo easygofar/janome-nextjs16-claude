@@ -8,6 +8,8 @@ export const metadata = {
     canonical: "https://iranjanome.ir/en/services/training/",
     languages: {
       fa: "https://iranjanome.ir/services/training/",
+      en: "https://iranjanome.ir/en/services/training/",
+      "x-default": "https://iranjanome.ir/services/training/",
     },
   },
   openGraph: {

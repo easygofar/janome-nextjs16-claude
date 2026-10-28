@@ -8,6 +8,8 @@ export const metadata = {
     canonical: "https://iranjanome.ir/en/products/",
     languages: {
       fa: "https://iranjanome.ir/products/",
+      en: "https://iranjanome.ir/en/products/",
+      "x-default": "https://iranjanome.ir/products/",
     },
   },
   openGraph: {

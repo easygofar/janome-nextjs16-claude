@@ -55,11 +55,11 @@ export default function Menu({ homePage = false }) {
             id="logo-text"
             className="d-flex align-items-center justify-content-center position-relative"
           >
-            <div id="farsi-title">
+            <div id="farsi-title" className="w-100 p-0 flex-row align-items-center justify-content-center">
               {homePage ? (
-                <h1>نماینده انحصاری ژانومه در ایران</h1>
+                <h1 className="text-center">نماینده رسمی و انحصاری چرخ خیاطی ژانومه</h1>
               ) : (
-                <h2>نماینده انحصاری ژانومه در ایران</h2>
+                <h2>نماینده رسمی و انحصاری چرخ خیاطی ژانومه</h2>
               )}
             </div>
             <div id="farsi-logo" className="p-0">
@@ -193,7 +193,7 @@ const getMenu = (handleHideHamburgermenu) => {
               onClick={handleHideHamburgermenu}
               className="dropdown-item"
             >
-              سئولات فنی متداول
+              سؤالات فنی متداول
             </Link>
           </li>
           <li>
