@@ -55,11 +55,18 @@ export default function Menu({ homePage = false }) {
             id="logo-text"
             className="d-flex align-items-center justify-content-center position-relative"
           >
-            <div id="farsi-title" className="w-100 p-0 flex-row align-items-center justify-content-center">
+            {/* <div id="farsi-title" className="w-100 p-0 flex-row align-items-center justify-content-center">
               {homePage ? (
                 <h1 className="text-center">نماینده رسمی و انحصاری چرخ خیاطی ژانومه</h1>
               ) : (
                 <h2>نماینده رسمی و انحصاری چرخ خیاطی ژانومه</h2>
+              )}
+            </div> */}
+            <div id="farsi-title">
+              {homePage ? (
+                <h1>نماینده رسمی و انحصاری چرخ خیاطی ژانومه</h1>
+              ) : (
+                <p className="h2 m-0">نماینده انحصاری ژانومه در ایران</p>
               )}
             </div>
             <div id="farsi-logo" className="p-0">
@@ -99,7 +106,7 @@ const getMenu = (handleHideHamburgermenu) => {
         <Link
           href="/"
           className="nav-link dropdown-toggle"
-          id="navbarDropdown"
+          id="langDropdown"
           role="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
@@ -107,7 +114,7 @@ const getMenu = (handleHideHamburgermenu) => {
         >
           <BiWorld size="2.0rem" />
         </Link>
-        <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+        <ul className="dropdown-menu" aria-labelledby="langDropdown">
           <li>
             <Link
               href="/en"
@@ -151,7 +158,7 @@ const getMenu = (handleHideHamburgermenu) => {
         <Link
           href="/"
           className="nav-link dropdown-toggle"
-          id="navbarDropdown"
+          id="langDropdown"
           role="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"

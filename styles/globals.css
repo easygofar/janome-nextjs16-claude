@@ -346,7 +346,8 @@ ul.eng-content a {
 }
 
 #farsi-title>h1,
-#farsi-title>h2 {
+#farsi-title>h2,
+#farsi-title>p {
 	font-size: 1.4rem;
 }
 
@@ -356,7 +357,8 @@ ul.eng-content a {
 	padding-top: 15px;
 }
 
-#farsi-title-eng>h1 {
+#farsi-title-eng>h1,
+#farsi-title-eng>p {
 	font-size: 1.4rem;
 	top: 10px;
 }
@@ -1624,7 +1626,8 @@ small {
 		padding-top: 10px;
 	}
 
-	#farsi-title-eng>h1 {
+	#farsi-title-eng>h1,
+	#farsi-title-eng>p {
 		font-size: 1.2rem;
 		top: 10px;
 	}

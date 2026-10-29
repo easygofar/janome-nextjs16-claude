@@ -8,7 +8,8 @@ import $ from "jquery";
 import { CgCheck } from "react-icons/cg";
 ////
 export default function MenuEnd({ pathname }) {
-  const homePage = true;
+  // const homePage = true;
+  const homePage = pathname === "/en" || pathname === "/en/";
   const background =
     pathname === "/en" ? "bg-transparent" : "navbar-light bg-light";
   const handleHideHamburgermenu = (e) => {
@@ -53,8 +54,9 @@ export default function MenuEnd({ pathname }) {
             className="d-flex align-items-center justify-content-center position-relative eng-content"
           >
             <div id="farsi-title-eng">
-              {homePage ? <h1>Iran Janome</h1> : <h4>Iran Janome</h4>}
-            </div>
+              {/* {homePage ? <h1>Iran Janome</h1> : <h4>Iran Janome</h4>} */}
+              {homePage ? <h1>Official Janome Sewing Machine Dealer in Iran</h1>
+                : <p className="h4 m-0">Iran Janome</p>}            </div>
             <div id="janome-logo" className="p-0">
               <img
                 src="/images/janome-logo-sm.png"
