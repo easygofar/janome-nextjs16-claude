@@ -119,7 +119,7 @@ const getMenu = (handleHideHamburgermenu) => {
       </li>
       <li className="nav-item">
         <Link
-          href="/en"
+          href="/en/#menu-js"
           onClick={handleHideHamburgermenu}
           className="nav-link eng-menu"
         >
