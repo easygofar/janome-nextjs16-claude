@@ -1,33 +1,6 @@
-// export const metadata = {
-//   title: "Iran Janome | Official Exclusive Dealer | Sales & Service",
-//   description: "Iran Janome After-Sales Service",
-//   keywords:
-//     "janome sewing machine, home sewing machine, sewing macine, buy sewing macihne, janome, japan",
-//   alternates: {
-//     canonical: "https://iranjanome.ir/en/",
-//     languages: {
-//       fa: "https://iranjanome.ir/",
-//       en: "https://iranjanome.ir/en/",
-//       "x-default": "https://iranjanome.ir/",
-//     },
-//   },
-//   openGraph: {
-//     title: "Iran Janome | Official Exclusive Dealer | Sales & Service",
-//     description: "Iran Janome After-Sales Service",
-//     images: [
-//       { url: "https://iranjanome.ir/images/background/M17_og.jpg", width: 1200, height: 630 },
-//     ],
-//   },
-// };
-
-// // The original page rendered nothing but <Head> tags; kept as-is since the
-// // visible homepage content (hero) lives in the shared layout/chrome.
-// export default function EnHomePage() {
-//   return null;
-// }
-
-// app/(en)/en/page.jsx — full replacement
 import Link from "next/link";
+
+import { LOGO_URL, jsonLdScript } from "@/lib/seo";
 
 export const metadata = {
   title: "Janome Sewing Machines | Official Exclusive Dealer in Iran",
@@ -64,7 +37,7 @@ const jsonLd = {
   "@type": "Organization",
   name: "Iran Janome",
   url: "https://iranjanome.ir/en/",
-  logo: "https://iranjanome.ir/images/janome-logo-sm.png",
+  logo: LOGO_URL,
   sameAs: ["https://www.instagram.com/iranjanome.ir/"],
   description: "Official exclusive Janome sewing machine dealer in Iran",
   address: {
@@ -84,17 +57,14 @@ const jsonLd = {
 export default function EnHomePage() {
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-      />
+      <script {...jsonLdScript(jsonLd)} />
       <main
-        className="home-intro eng-content bg-dark text-light"
+        className="home-intro eng-content text-light"
         style={{
           position: "relative",
           zIndex: 30,
           marginTop: "100vh",
-          opacity: 0.80,
+          background: "rgba(0, 0, 0, 0.82)",
           padding: "2.5rem 1rem 6rem",
         }}
       >
@@ -102,22 +72,22 @@ export default function EnHomePage() {
           <h2 className="h4">Janome sewing machines in Iran</h2>
           <p>
             Iran Janome is the official exclusive dealer of Janome sewing
-            machines in Iran. Browse the <Link href="/en/products/">products</Link>{" "}
-            or <Link href="/en/services/compare/">compare models</Link> side by
+            machines in Iran. Browse the <Link className="link-light" href="/en/products/">products</Link>{" "}
+            or <Link className="link-light" href="/en/services/compare/">compare models</Link> side by
             side.
           </p>
           <h2 className="h4">Service and support</h2>
           <p>
-            Learn with <Link href="/en/services/training/">training videos</Link>,
-            read the <Link href="/en/services/faq/">FAQ</Link>, or find{" "}
-            <Link href="/en/parts/">spare parts</Link>.
+            Learn with <Link className="link-light" href="/en/services/training/">training videos</Link>,
+            read the <Link className="link-light" href="/en/services/faq/">FAQ</Link>, or find{" "}
+            <Link className="link-light" href="/en/parts/">spare parts</Link>.
           </p>
           <h2 className="h4">Contact</h2>
           <p>
             Tehran, Jomhouri Eslami Ave., Sajjad Building. Phone{" "}
-            <a href="tel:+982166499533">+98 21 66499533</a>.{" "}
-            <Link href="/en/contact/">Contact us</Link> or read our{" "}
-            <Link href="/en/history/">history</Link>.
+            <a className="link-light" href="tel:+982166499533">+98 21 66499533</a>.{" "}
+            <Link className="link-light" href="/en/contact/">Contact us</Link> or read our{" "}
+            <Link className="link-light" href="/en/history/">history</Link>.
           </p>
         </div>
       </main>

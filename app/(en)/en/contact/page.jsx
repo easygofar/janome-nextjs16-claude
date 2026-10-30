@@ -1,9 +1,8 @@
 import ContactClientEn from "./contact-client";
 
 export const metadata = {
-  title: "Contact Us | Iran Janome",
-  description: "Iran Janome Contact",
-  keywords: "contact,phone,address,email,iran janome,",
+  title: "Contact Iran Janome | Official Janome Dealer in Iran",
+  description: "Contact Iran Janome in Tehran: address, phone and email for Janome sewing machine sales, warranty, spare parts and after-sales service.",
   alternates: {
     canonical: "https://iranjanome.ir/en/contact/",
     languages: {
@@ -13,8 +12,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Contact Us | Iran Janome",
-    description: "Iran Janome Contact",
+    title: "Contact Iran Janome | Official Janome Dealer in Iran",
+    description: "Contact Iran Janome in Tehran: address, phone and email for Janome sewing machine sales, warranty, spare parts and after-sales service.",
     url: "https://iranjanome.ir/en/contact/",
     locale: "en_US",
     siteName: "Iran Janome",

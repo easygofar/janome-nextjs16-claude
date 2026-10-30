@@ -1,9 +1,8 @@
 import ProductsClientEn from "./products-client";
 
 export const metadata = {
-  title: "Janome Models List | Iran Janome",
-  description: "Janome Sewing Machine Models",
-  keywords: "Janome models, janome sewing machine, 802P, 802A, 802, 644D, 744D",
+  title: "Janome Sewing Machine Models | Iran Janome",
+  description: "Browse Janome sewing machine and serger models offered by Iran Janome, with specifications and filters by type and features.",
   alternates: {
     canonical: "https://iranjanome.ir/en/products/",
     languages: {
@@ -13,8 +12,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Janome Models List | Iran Janome",
-    description: "Janome Sewing Machine Models",
+    title: "Janome Sewing Machine Models | Iran Janome",
+    description: "Browse Janome sewing machine and serger models offered by Iran Janome, with specifications and filters by type and features.",
     url: "https://iranjanome.ir/en/products/",
     images: [
       { url: "https://iranjanome.ir/images/background/MC500E_og_image.jpg", width: 1200, height: 630 },

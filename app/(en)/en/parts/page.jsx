@@ -3,9 +3,8 @@ import { FiSettings } from "react-icons/fi";
 import TopEng from "@/components/topeng";
 
 export const metadata = {
-  title: "Spare Part | Iran Janome",
-  description: "ُPare parts for Janome Sewing machines",
-  keywords: "spare parts, janome sewing machine, after sales",
+  title: "Janome Spare Parts | Iran Janome",
+  description: "Spare parts for Janome sewing machines. Contact Iran Janome, the official dealer in Iran, for parts and after-sales service.",
   alternates: {
     canonical: "https://iranjanome.ir/en/parts/",
     languages: {
@@ -15,8 +14,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Spare Part | Iran Janome",
-    description: "Pare parts for Janome Sewing machines",
+    title: "Janome Spare Parts | Iran Janome",
+    description: "Spare parts for Janome sewing machines. Contact Iran Janome, the official dealer in Iran, for parts and after-sales service.",
     url: "https://iranjanome.ir/en/parts/",
     images: [
       { url: "https://iranjanome.ir/images/background/MC500E_og_image.jpg", width: 1200, height: 630 },

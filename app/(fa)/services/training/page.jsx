@@ -1,10 +1,8 @@
 import TrainingClient from "./training-client";
 
 export const metadata = {
-  title: " فیلم های آموزشی | ژانومه ایران ",
-  description: " فیلم های آموزشی چرخ خیاطی های ژانومه ",
-  keywords:
-    "آموزش چرخ خیاطی ژانومه, فیلم آموزشی چرخ خیاطی, آموزش کار با مدل‌های ژانومه, راهنمای استفاده از چرخ خیاطی ژانومه, نحوه نخ‌کشی چرخ خیاطی, آموزش تصویری چرخ خیاطی ژانومه, آموزش اولیه خیاطی با چرخ ژانومه",
+  title: "فیلم‌های آموزشی چرخ خیاطی ژانومه | ژانومه ایران",
+  description: "فیلم‌های آموزشی کار با مدل‌های مختلف چرخ خیاطی ژانومه برای یادگیری قدم‌به‌قدم استفاده و نگهداری دستگاه.",
   alternates: {
     // NOTE: the original canonical/og:url omitted the trailing slash used
     // everywhere else on the site (next.config.js sets trailingSlash: true).
@@ -17,8 +15,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "فیلم های آموزشی | ژانومه ایران",
-    description: " جدول مقایسه مدهای چرخ خیاطی ژانومه ",
+    title: "فیلم‌های آموزشی چرخ خیاطی ژانومه | ژانومه ایران",
+    description: "فیلم‌های آموزشی کار با مدل‌های مختلف چرخ خیاطی ژانومه برای یادگیری قدم‌به‌قدم استفاده و نگهداری دستگاه.",
     url: "https://iranjanome.ir/services/training/",
     images: [
       { url: "https://iranjanome.ir/images/background/MC500E_og_image.jpg", width: 1200, height: 630 },

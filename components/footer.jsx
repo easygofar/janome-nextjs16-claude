@@ -30,7 +30,6 @@ import SocialMedia from "./socialmedia";
 const quickLinks = [
   { href: "/", label: "خانه" },
   { href: "/products/", label: "چرخ خیاطی ژانومه" },
-  { href: "/janome-sewing-machine-model/", label: "مدل های چرخ خیاطی" },
   { href: "/agents/", label: "نمایندگی ها" },
   { href: "/parts/", label: "لوازم یدکی" },
   { href: "/services/compare/", label: "مقایسه محصولات" },

@@ -8,10 +8,8 @@ import $ from "jquery";
 import { CgCheck } from "react-icons/cg";
 ////
 export default function MenuEnd({ pathname }) {
-  // const homePage = true;
   const homePage = pathname === "/en" || pathname === "/en/";
-  const background =
-    pathname === "/en" ? "bg-transparent" : "navbar-light bg-light";
+  const background = homePage ? "bg-transparent" : "navbar-light bg-light";
   const handleHideHamburgermenu = (e) => {
     $(".navbar-collapse").removeClass("show");
     $(".navbar-collapse").addClass("hide");
@@ -54,7 +52,6 @@ export default function MenuEnd({ pathname }) {
             className="d-flex align-items-center justify-content-center position-relative eng-content"
           >
             <div id="farsi-title-eng">
-              {/* {homePage ? <h1>Iran Janome</h1> : <h4>Iran Janome</h4>} */}
               {homePage ? <h1>Official Janome Sewing Machine Dealer in Iran</h1>
                 : <p className="h4 m-0">Iran Janome</p>}            </div>
             <div id="janome-logo" className="p-0">
@@ -62,7 +59,7 @@ export default function MenuEnd({ pathname }) {
                 src="/images/janome-logo-sm.png"
                 width={200}
                 height={34}
-                alt="iran janome logo"
+                alt="Iran Janome logo"
               />
             </div>
           </div>
@@ -86,14 +83,15 @@ const getMenu = (handleHideHamburgermenu) => {
         <Link
           href="/en"
           className="nav-link eng-menu dropdown-toggle"
-          id="navbarDropdown"
+          id="langDropdown"
           role="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
+          aria-label="Language"
         >
           <BiWorld size="2.0rem" />
         </Link>
-        <ul className="dropdown-menu eng" aria-labelledby="navbarDropdown">
+        <ul className="dropdown-menu eng" aria-labelledby="langDropdown">
           <li>
             <Link
               href="/en"
@@ -141,14 +139,14 @@ const getMenu = (handleHideHamburgermenu) => {
         <Link
           href="/en"
           className="nav-link eng-menu dropdown-toggle"
-          id="navbarDropdown"
+          id="servicesDropdown"
           role="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
           Services
         </Link>
-        <ul className="dropdown-menu eng" aria-labelledby="navbarDropdown">
+        <ul className="dropdown-menu eng" aria-labelledby="servicesDropdown">
           <li>
             <Link
               href="/en/services/training"
@@ -185,28 +183,8 @@ const getMenu = (handleHideHamburgermenu) => {
               FAQ
             </Link>
           </li>
-          {/* <li>
-						<hr className="dropdown-divider" />
-					</li> */}
-          {/* <li>
-						<Link href="/">
-							<a
-								onClick={handleHideHamburgermenu}
-								className="dropdown-item"
-							>
-								فعال کردن گارانتی{" "}
-							</a>
-						</Link>
-					</li> */}
         </ul>
       </li>
-      {/* <li className="nav-item">
-				<Link href="/agents">
-					<a onClick={handleHideHamburgermenu} className="nav-link eng-menu">
-						نمایندگی‌ها
-					</a>
-				</Link>
-			</li> */}
       <li className="nav-item">
         <Link
           href="/en/history"

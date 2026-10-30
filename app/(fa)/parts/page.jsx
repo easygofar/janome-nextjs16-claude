@@ -3,10 +3,8 @@ import { FiSettings } from "react-icons/fi";
 import TopEng from "@/components/topeng";
 
 export const metadata = {
-  title: " لوازم یدکی | ژانومه ایران ",
-  description: " لوازم یدکی چرخ خیاطی های ژانومه ",
-  keywords:
-    "لوازم یدکی چرخ خیاطی ژانومه, قطعات جانبی ژانومه, خرید پایه چرخ خیاطی ژانومه, قطعات اورجینال چرخ خیاطی, فروش قطعات ژانومه, قیمت قطعه چرخ خیاطی, تعویض قطعات چرخ خیاطی ژانومه",
+  title: "لوازم یدکی چرخ خیاطی ژانومه | ژانومه ایران",
+  description: "فهرست لوازم و قطعات یدکی چرخ خیاطی‌های ژانومه. برای تهیه قطعات و خدمات پس از فروش با نماینده رسمی ژانومه در ایران تماس بگیرید.",
   alternates: {
     canonical: "https://iranjanome.ir/parts/",
     languages: {
@@ -16,8 +14,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: " لوازم یدکی | ژانومه ایران ",
-    description: " لوازم یدکی چرخ خیاطی های ژانومه ",
+    title: "لوازم یدکی چرخ خیاطی ژانومه | ژانومه ایران",
+    description: "فهرست لوازم و قطعات یدکی چرخ خیاطی‌های ژانومه. برای تهیه قطعات و خدمات پس از فروش با نماینده رسمی ژانومه در ایران تماس بگیرید.",
     url: "https://iranjanome.ir/parts/",
     images: [
       { url: "https://iranjanome.ir/images/background/MC500E_og_image.jpg", width: 1200, height: 630 },

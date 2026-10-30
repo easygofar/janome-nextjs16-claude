@@ -1,9 +1,8 @@
 import TrainingClientEn from "./training-client";
 
 export const metadata = {
-  title: " Training Movies | Iran Janome ",
-  description: " Training Movies for Janome Sewing Machines ",
-  keywords: "Janome Sewing Macine, training movies,Hogaro,Juno,New Home, Janome",
+  title: "Janome Training Videos | Iran Janome",
+  description: "Training videos for Janome sewing machines: learn to use and look after different models, step by step.",
   alternates: {
     canonical: "https://iranjanome.ir/en/services/training/",
     languages: {
@@ -13,8 +12,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "Training Movies | Iran Janome",
-    description: " Training Movies for Janome Sewing Machines ",
+    title: "Janome Training Videos | Iran Janome",
+    description: "Training videos for Janome sewing machines: learn to use and look after different models, step by step.",
     // NOTE: original og:url pointed at the Persian /services/training/ page.
     // Fixed to point at this English page.
     url: "https://iranjanome.ir/en/services/training/",

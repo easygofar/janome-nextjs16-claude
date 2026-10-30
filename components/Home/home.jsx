@@ -28,7 +28,13 @@ function Home({ path }) {
 						{/* {path === "/" || path === "/" ? ( */}
 						<div
 							className="home-background-machine no-effect"
-							ref={tiltRef}
+								ref={tiltRef}
+								role="img"
+								aria-label={
+									path && path.startsWith("/en")
+										? "Janome sewing machine"
+										: "چرخ خیاطی ژانومه"
+								}
 						></div>
 						{/* ) : null} */}
 					</div>

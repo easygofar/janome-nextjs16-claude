@@ -1,20 +1,21 @@
 import FaqClientEn from "./faq-client";
+import { faqContentEng } from "@/data/machines";
+import { faqSchema, jsonLdScript } from "@/lib/seo";
 
 export const metadata = {
-  title: "FAQ | Iran Janome",
-  description: "Frequently Asked Question",
-  keywords: "FAQ, questions, Iran Janome",
+  title: "Janome Sewing Machine FAQ | Iran Janome",
+  description: "Answers to frequently asked technical questions about Janome sewing machines, such as why needles break and how to change them.",
   alternates: {
     canonical: "https://iranjanome.ir/en/services/faq/",
     languages: {
-      fa: "https://iranjanome.ir/services/faq/",
+      fa: "https://iranjanome.ir/faq/",
       en: "https://iranjanome.ir/en/services/faq/",
-      "x-default": "https://iranjanome.ir/services/faq/",
+      "x-default": "https://iranjanome.ir/faq/",
     },
   },
   openGraph: {
-    title: "FAQ | Iran Janome",
-    description: "Frequently Asked Question",
+    title: "Janome Sewing Machine FAQ | Iran Janome",
+    description: "Answers to frequently asked technical questions about Janome sewing machines, such as why needles break and how to change them.",
     url: "https://iranjanome.ir/en/services/faq/",
     images: [
       { url: "https://iranjanome.ir/images/background/MC500E_og_image.jpg", width: 1200, height: 630 },
@@ -23,5 +24,10 @@ export const metadata = {
 };
 
 export default function FaqPageEn() {
-  return <FaqClientEn />;
+  return (
+    <>
+      <FaqClientEn />
+      <script {...jsonLdScript(faqSchema(faqContentEng))} />
+    </>
+  );
 }

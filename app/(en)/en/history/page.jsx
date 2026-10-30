@@ -2,8 +2,7 @@ import HistoryClient from "./history-client";
 
 export const metadata = {
   title: "Janome History | Iran Janome",
-  description: " Janome History ",
-  keywords: "Janome, Janome sewing mahince, janome history",
+  description: "The history of Janome, the Japanese sewing machine maker. Iran Janome is its official exclusive dealer in Iran.",
   alternates: {
     canonical: "https://iranjanome.ir/en/history/",
     languages: {
@@ -14,7 +13,7 @@ export const metadata = {
   },
   openGraph: {
     title: "Janome History | Iran Janome",
-    description: "Janome History",
+    description: "The history of Janome, the Japanese sewing machine maker. Iran Janome is its official exclusive dealer in Iran.",
     url: "https://iranjanome.ir/en/history/",
     images: [
       { url: "https://iranjanome.ir/images/background/MC500E_og_image.jpg", width: 1200, height: 630 },

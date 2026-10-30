@@ -1,10 +1,8 @@
 import ProductsClient from "./products-client";
 
 export const metadata = {
-  title: "لیست انواع چرخ خیاطی های ژانومه | ژانومه ایران ",
-  description: " لیست چرخ خیاطی های ژانومه ",
-  keywords:
-    "چرخ خیاطی ژانومه, مدل‌های چرخ خیاطی ژانومه, چرخ خیاطی برقی ژانومه, چرخ خیاطی ژاپنی, چرخ خیاطی گلدوزی, چرخ خیاطی کاوری مدل عروس, چرخ خیاطی بازویی, چرخ خیاطی کف تخت, چرخ خیاطی کامپیوتری ژانومه, چرخ خیاطی صنعتی ژانومه",
+  title: "لیست انواع چرخ خیاطی ژانومه | ژانومه ایران",
+  description: "مدل‌های چرخ خیاطی و اورلاک ژانومه با مشخصات فنی و فیلتر بر اساس نوع و ویژگی. نماینده رسمی و انحصاری ژانومه در ایران.",
   alternates: {
     canonical: "https://iranjanome.ir/products/",
     languages: {
@@ -14,8 +12,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "لیست انواع چرخ خیاطی های ژانومه | ژانومه ایران",
-    description: " لیست چرخ خیاطی های ژانومه ",
+    title: "لیست انواع چرخ خیاطی ژانومه | ژانومه ایران",
+    description: "مدل‌های چرخ خیاطی و اورلاک ژانومه با مشخصات فنی و فیلتر بر اساس نوع و ویژگی. نماینده رسمی و انحصاری ژانومه در ایران.",
     // NOTE: the original page had this pointed at /parts/ - almost
     // certainly copy-pasted from the parts page. Fixed to point at itself.
     url: "https://iranjanome.ir/products/",

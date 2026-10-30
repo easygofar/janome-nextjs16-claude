@@ -1,9 +1,8 @@
 import AgentsClient from "./agents-client";
 
 export const metadata = {
-  title: "لیست نمایندگی ها مجاز چرخ خیاطی های ژانومه | ژانومه ایران",
-  description: "نمایندگی های رسمی فروش و سرویس چرخ خیاطی های ژانومه در ایران",
-  keywords: "چرخ خیاطی ژانومه , نمایندگی های مجاز",
+  title: "نمایندگی‌های مجاز چرخ خیاطی ژانومه در ایران | ژانومه ایران",
+  description: "فهرست نمایندگی‌های رسمی فروش و خدمات پس از فروش چرخ خیاطی ژانومه در ایران. نزدیک‌ترین نمایندگی مجاز را پیدا کنید.",
   alternates: {
     canonical: "https://iranjanome.ir/agents/",
     languages: {
@@ -12,8 +11,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "لیست نمایندگی ها مجاز چرخ خیاطی های ژانومه | ژانومه ایران",
-    description: "نمایندگی های رسمی فروش و سرویس چرخ خیاطی های ژانومه در ایران",
+    title: "نمایندگی‌های مجاز چرخ خیاطی ژانومه در ایران | ژانومه ایران",
+    description: "فهرست نمایندگی‌های رسمی فروش و خدمات پس از فروش چرخ خیاطی ژانومه در ایران. نزدیک‌ترین نمایندگی مجاز را پیدا کنید.",
     url: "https://iranjanome.ir/agents/",
     images: [
       { url: "https://iranjanome.ir/images/background/MC500E_og_image.jpg", width: 1200, height: 630 },

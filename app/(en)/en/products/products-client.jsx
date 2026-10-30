@@ -19,6 +19,7 @@ import { _allMachines, _filters_eng } from "@/data/machines";
 import Search from "@/components/Search/search";
 import Detail from "@/components/Products/Detail";
 import * as ga from "@/lib/ga";
+import { modelSlug } from "@/lib/slug";
 import FiltersEng from "@/components/Products/Filterseng";
 import TopEng from "@/components/topeng";
 
@@ -322,7 +323,7 @@ const Products = () => {
                   <div className="w-100">
                     <span className="w-100 d-flex justify-content-center">
                       <Link
-                        href={`/en/janome-sewing-machine-model/${fm.model}`}
+                        href={`/en/janome-sewing-machine-model/${modelSlug(fm.model)}`}
                         className="text-decoration-none p-2 eng-content fs-5"
                         style={{
                           color: "var(--bs-primary) !important",

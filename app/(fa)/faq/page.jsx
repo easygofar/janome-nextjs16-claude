@@ -1,10 +1,10 @@
 import FaqClient from "./faq-client";
+import { faqContent } from "@/data/machines";
+import { faqSchema, jsonLdScript } from "@/lib/seo";
 
 export const metadata = {
-  title: "سؤالات متداول فنی | ژانومه ایران",
-  description: "سؤال و جواب فنی چرخ خیاطی های ژانومه",
-  keywords:
-    "سؤالات متداول چرخ خیاطی ژانومه, راهنمای خرید چرخ خیاطی, نحوه تعمیر چرخ خیاطی ژانومه, پاسخ به مشکلات چرخ خیاطی, سوالات رایج ژانومه, مشکلات چرخ خیاطی و راه‌حل‌ها, نکات نگهداری چرخ خیاطی ژانومه",
+  title: "سؤالات متداول فنی چرخ خیاطی ژانومه | ژانومه ایران",
+  description: "پاسخ سؤالات متداول فنی درباره چرخ خیاطی ژانومه؛ از علت شکستن سوزن و تعویض سوزن تا مشکلات رایج دوخت.",
   alternates: {
     canonical: "https://iranjanome.ir/faq/",
     // NOTE: the original pointed this at /en/faq/, which doesn't exist -
@@ -16,8 +16,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "سؤالات متداول فنی | ژانومه ایران",
-    description: "سؤال و جواب فنی چرخ خیاطی های ژانومه",
+    title: "سؤالات متداول فنی چرخ خیاطی ژانومه | ژانومه ایران",
+    description: "پاسخ سؤالات متداول فنی درباره چرخ خیاطی ژانومه؛ از علت شکستن سوزن و تعویض سوزن تا مشکلات رایج دوخت.",
     url: "https://iranjanome.ir/faq/",
     images: [
       { url: "https://iranjanome.ir/images/background/MC500E_og_image.jpg", width: 1200, height: 630 },
@@ -26,5 +26,10 @@ export const metadata = {
 };
 
 export default function FaqPage() {
-  return <FaqClient />;
+  return (
+    <>
+      <FaqClient />
+      <script {...jsonLdScript(faqSchema(faqContent))} />
+    </>
+  );
 }

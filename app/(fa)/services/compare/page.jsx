@@ -1,10 +1,8 @@
 import CompareClient from "./compare-client";
 
 export const metadata = {
-  title: " مقایسه محصولات | ژانومه ایران ",
-  description: " جدول مقایسه مدهای چرخ خیاطی ژانومه ",
-  keywords:
-    "مقایسه چرخ خیاطی ژانومه, تفاوت مدل‌های ژانومه, راهنمای انتخاب چرخ خیاطی ژانومه, بررسی فنی چرخ خیاطی, بهترین مدل چرخ خیاطی ژانومه, چرخ خیاطی حرفه‌ای یا خانگی, مقایسه قیمت چرخ خیاطی ژانومه",
+  title: "مقایسه مدل‌های چرخ خیاطی ژانومه | ژانومه ایران",
+  description: "جدول مقایسه مدل‌های چرخ خیاطی ژانومه؛ ویژگی‌ها و مشخصات چند مدل را کنار هم ببینید و مدل مناسب خود را انتخاب کنید.",
   alternates: {
     canonical: "https://iranjanome.ir/services/compare/",
     languages: {
@@ -14,8 +12,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "مقایسه محصولات | ژانومه ایران",
-    description: " جدول مقایسه مدهای چرخ خیاطی ژانومه ",
+    title: "مقایسه مدل‌های چرخ خیاطی ژانومه | ژانومه ایران",
+    description: "جدول مقایسه مدل‌های چرخ خیاطی ژانومه؛ ویژگی‌ها و مشخصات چند مدل را کنار هم ببینید و مدل مناسب خود را انتخاب کنید.",
     url: "https://iranjanome.ir/services/compare/",
     images: [
       { url: "https://iranjanome.ir/images/background/MC500E_og_image.jpg", width: 1200, height: 630 },

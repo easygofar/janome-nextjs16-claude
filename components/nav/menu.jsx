@@ -34,7 +34,7 @@ export default function Menu({ homePage = false }) {
               data-bs-target="#navbarSupportedContent"
               aria-controls="navbarSupportedContent"
               aria-expanded="false"
-              aria-label="Toggle navigation"
+              aria-label="باز و بسته کردن منو"
               style={{
                 background: "#ee1d23",
                 color: "#fff",
@@ -55,13 +55,6 @@ export default function Menu({ homePage = false }) {
             id="logo-text"
             className="d-flex align-items-center justify-content-center position-relative"
           >
-            {/* <div id="farsi-title" className="w-100 p-0 flex-row align-items-center justify-content-center">
-              {homePage ? (
-                <h1 className="text-center">نماینده رسمی و انحصاری چرخ خیاطی ژانومه</h1>
-              ) : (
-                <h2>نماینده رسمی و انحصاری چرخ خیاطی ژانومه</h2>
-              )}
-            </div> */}
             <div id="farsi-title">
               {homePage ? (
                 <h1>نماینده رسمی و انحصاری چرخ خیاطی ژانومه</h1>
@@ -74,7 +67,7 @@ export default function Menu({ homePage = false }) {
                 src="/images/janome-logo-farsi-sm.png"
                 width={200}
                 height={34}
-                alt="iran janome farsi logo"
+                alt="لوگوی فارسی ژانومه ایران"
               />
             </div>
             <div id="janome-logo" className="p-0">
@@ -82,7 +75,7 @@ export default function Menu({ homePage = false }) {
                 src="/images/janome-logo-sm.png"
                 width={200}
                 height={34}
-                alt="iran janome logo"
+                alt="لوگوی ژانومه"
               />
             </div>
           </div>
@@ -110,7 +103,7 @@ const getMenu = (handleHideHamburgermenu) => {
           role="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
-          aria-label="Language"
+          aria-label="زبان"
         >
           <BiWorld size="2.0rem" />
         </Link>
@@ -158,15 +151,15 @@ const getMenu = (handleHideHamburgermenu) => {
         <Link
           href="/"
           className="nav-link dropdown-toggle"
-          id="langDropdown"
+          id="servicesDropdown"
           role="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
-          aria-label="Services"
+          aria-label="خدمات"
         >
           خدمات
         </Link>
-        <ul className="dropdown-menu z-99" aria-labelledby="navbarDropdown">
+        <ul className="dropdown-menu z-99" aria-labelledby="servicesDropdown">
           <li>
             <Link
               href="/services/training"
@@ -203,18 +196,7 @@ const getMenu = (handleHideHamburgermenu) => {
               سؤالات فنی متداول
             </Link>
           </li>
-          <li>
-            <hr className="dropdown-divider" />
-          </li>
-          <li>
-            <Link
-              href="/"
-              onClick={handleHideHamburgermenu}
-              className="dropdown-item"
-            >
-              فعال کردن گارانتی{" "}
-            </Link>
-          </li>
+          {/* Warranty-activation link removed: it pointed at "/" (placeholder). Re-add when the page exists. */}
         </ul>
       </li>
       <li className="nav-item">

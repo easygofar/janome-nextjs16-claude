@@ -1,9 +1,8 @@
 import HistoryClient from "./history-client";
 
 export const metadata = {
-  title: " تاریخ شرکت ژانومه | ژانومه ایران ",
-  description: " تاریخ شرکت ژانومه ژاپن ",
-  keywords: "چرخ خیاطی ژانومه , تاریخ شرکت ژانومه",
+  title: "تاریخچه ژانومه ژاپن | ژانومه ایران",
+  description: "تاریخچه شرکت ژانومه ژاپن، سازنده چرخ خیاطی‌های ژانومه. ژانومه ایران نماینده رسمی و انحصاری این برند در ایران است.",
   alternates: {
     canonical: "https://iranjanome.ir/history/",
     languages: {
@@ -13,8 +12,8 @@ export const metadata = {
     },
   },
   openGraph: {
-    title: "تاریخ شرکت ژانومه | ژانومه ایران",
-    description: " تاریخ شرکت ژانومه ژاپن ",
+    title: "تاریخچه ژانومه ژاپن | ژانومه ایران",
+    description: "تاریخچه شرکت ژانومه ژاپن، سازنده چرخ خیاطی‌های ژانومه. ژانومه ایران نماینده رسمی و انحصاری این برند در ایران است.",
     url: "https://iranjanome.ir/history/",
     images: [
       { url: "https://iranjanome.ir/images/background/MC500E_og_image.jpg", width: 1200, height: 630 },

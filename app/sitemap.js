@@ -1,55 +1,48 @@
-export const dynamic = "force-static"
+export const dynamic = "force-static";
 import { _allMachines } from "@/data/machines";
+import { modelSlug } from "@/lib/slug";
 
 const BASE = "https://iranjanome.ir";
 
+// No <lastmod>: the site has no per-page edit dates, and a build-time
+// timestamp on every URL teaches Google to ignore lastmod altogether.
+// To add real dates later, put a `lastModified: "YYYY-MM-DD"` on each entry.
+
+// [persian path, english path] — null where a language version doesn't exist.
+const pairs = [
+  ["", "en"],
+  ["agents", null],
+  ["contact", "en/contact"],
+  ["faq", "en/services/faq"],
+  ["history", "en/history"],
+  ["parts", "en/parts"],
+  ["products", "en/products"],
+  ["services/compare", "en/services/compare"],
+  ["services/training", "en/services/training"],
+];
+
+const abs = p => (p ? `${BASE}/${p}/` : `${BASE}/`);
+
+function entry(fa, en) {
+  const e = [];
+  const languages = {};
+  if (fa !== null) languages.fa = abs(fa);
+  if (en) languages.en = abs(en);
+  const alternates = fa !== null && en ? { languages } : undefined;
+  if (fa !== null) e.push({ url: abs(fa), ...(alternates && { alternates }) });
+  if (en) e.push({ url: abs(en), ...(alternates && { alternates }) });
+  return e;
+}
+
 export default function sitemap() {
-  const now = new Date();
+  const statics = pairs.flatMap(([fa, en]) => entry(fa, en));
 
-  const faStatic = [
-    "",
-    "agents",
-    "contact",
-    "faq",
-    "history",
-    "parts",
-    "products",
-    "janome-sewing-machine-model",
-    "services/compare",
-    "services/training",
-  ].map(p => ({
-    url: p ? `${BASE}/${p}/` : `${BASE}/`,
-    lastModified: now,
-  }));
+  const models = _allMachines.flatMap(m => {
+    const s = modelSlug(m.model);
+    return entry(`janome-sewing-machine-model/${s}`, `en/janome-sewing-machine-model/${s}`);
+  });
 
-  const enStatic = [
-    "en",
-    "en/contact",
-    "en/history",
-    "en/parts",
-    "en/products",
-    "en/services/compare",
-    "en/services/faq",
-    "en/services/training",
-  ].map(p => ({
-    url: `${BASE}/${p}/`,
-    lastModified: now,
-  }));
-
-  const faModels = _allMachines.flatMap(m => [
-    { url: `${BASE}/janome-sewing-machine-model/${m.model}/`, lastModified: now },
-  ]);
-
-  const enModels = _allMachines.map(m => ({
-    url: `${BASE}/en/janome-sewing-machine-model/${m.model}/`,
-    lastModified: now,
-  }));
-
-  // NOTE: /products/[model]/ and /en/products/[model]/ are deliberately
-  // left out of the sitemap - they now carry a canonical pointing at the
-  // /janome-sewing-machine-model/ equivalent (see the comments in those
-  // page.jsx files), so listing both versions here would just resubmit
-  // the duplicate-content problem this migration fixed.
-
-  return [...faStatic, ...enStatic, ...faModels, ...enModels];
+  // /products/[model]/ and /en/products/[model]/ are intentionally left out:
+  // their canonical points at the /janome-sewing-machine-model/ equivalent.
+  return [...statics, ...models];
 }
