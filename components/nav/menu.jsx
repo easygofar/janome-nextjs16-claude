@@ -59,7 +59,8 @@ export default function Menu({ homePage = false }) {
               {homePage ? (
                 <h1>نماینده رسمی و انحصاری چرخ خیاطی ژانومه</h1>
               ) : (
-                <p className="h2 m-0">نماینده انحصاری ژانومه در ایران</p>
+                // <p className="h2 m-0">نماینده انحصاری ژانومه در ایران</p>
+                undefined
               )}
             </div>
             <div id="farsi-logo" className="p-0">
@@ -134,7 +135,7 @@ const getMenu = (handleHideHamburgermenu) => {
         </ul>
       </li>
       <li className="nav-item">
-        <Link href="/" onClick={handleHideHamburgermenu} className="nav-link">
+        <Link href="/#menu-js" onClick={handleHideHamburgermenu} className="nav-link">
           خانه
         </Link>
       </li>
